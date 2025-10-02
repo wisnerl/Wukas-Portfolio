@@ -2,27 +2,37 @@
 layout: base.njk
 section: home
 ---
-<div class="home-page">
-	<div class="home-page__bg-square"></div>
-
-  {# Hero #}
-  <div class="hero">
-    <div class="hero__col">
-      <h1 class="hero__title gradient-text">{{ home.title }}</h1>
-      {% if home.body %}
-        <div class="hero__body">{{ home.body | markdown | safe }}</div>
-      {% endif %}
+<div class="custom-hero">
+  <div class="custom-hero__bg"></div>
+  <div class="custom-hero__content">
+    <div class="custom-hero__title-wrap">
+      <h1 class="custom-hero__title">MARK WUKAS</h1>
     </div>
-    <div class="hero__col">
-      {% image
-        home.image,
-        home.image_alt,
-        "(min-width: 1024px) 50vw, 100vw",
-        "hero__image shadow",
-        "eager"
-      %}
+    <div class="custom-hero__columns">
+      <div class="custom-hero__col custom-hero__col--left">
+        <span class="custom-hero__span">PHYSICAL COPIES AVAILABLE NOW!</span>
+        <p class="custom-hero__desc">
+          The death of a retired Chicago homicide detective forces Will Moore, an assistant city editor for the Chicago Tribune, to revisit life-and-death events from his first days as a police reporter for City News Bureau. <a href="https://eckhartzpress.com/shop/the-kiss-of-night/">Learn more</a>
+        </p>
+        <div class="custom-hero__links">
+          <div>
+            <a href="#">Bookshop</a><br>
+            <a href="#">Apple Books</a><br>
+            <a href="#">UK/AUS/NZ</a>
+          </div>
+          <div>
+            <a href="#">Amazon</a><br>
+            <a href="#">Barnes & Noble</a>
+          </div>
+        </div>
+      </div>
+      <div class="custom-hero__col custom-hero__col--right">
+        <img src="/assets/img/book-cover.jpg" alt="Carrie Soto Is Back Book Cover" class="custom-hero__book-img">
+      </div>
     </div>
   </div>
+  <img src="/assets/img/skyline.png" alt="Skyline" class="custom-hero__skyline">
+</div>
 
   {# Projects #}
   <div class="list-header">

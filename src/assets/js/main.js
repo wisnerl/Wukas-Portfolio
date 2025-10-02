@@ -10,10 +10,10 @@ drawer();
 
 // Initialize dark mode toggle
 const { enableThemeSwitch } = document.documentElement.dataset;
-
-if (enableThemeSwitch) {
-  darkMode();
-}
+darkMode();
+// if (enableThemeSwitch) {
+  
+// }
 
 // Handle Netlify Identity Login
 if (window.netlifyIdentity) {
