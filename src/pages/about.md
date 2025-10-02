@@ -6,10 +6,8 @@ date: 2017-01-01T00:00:00.000Z
 permalink: /about/index.html
 eleventyNavigation:
   key: About
-  order: 4
+  order: 3
 ---
-<!--StartFragment-->
-
 Mark Wukas has spent his life in Chicago working as professional asker of questions as both a teacher and writer–and sometimes both at the same time.
 
 A native South Sider and graduate of Quigley Preparatory Seminary South, Wukas credits his high school job–two years as an Andy Frain usher–with giving him a knowledge of the city and its neighborhoods that helped him on the streets as a young reporter.
@@ -20,6 +18,4 @@ Wukas left public relations to return to the classroom, and after a year teachin
 
 Wukas lives in either Uptown or Edgewater, depending upon where realtors draw the line, and spends his time writing the stories he never had time to tell while teaching and coaching.
 
-<!--EndFragment-->
-
-![Fern in Hand](/src/assets/img/fern-forest.jpeg "Fern in Hand")
+![Mark Wukas in his office](/src/assets/img/ctc-l-ent-mark-wukas03.jpg "Mark Wukas in his office")
