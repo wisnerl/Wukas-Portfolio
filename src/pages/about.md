@@ -1,31 +1,25 @@
 ---
-title: About Me
-subtitle: ""
-metaDescription: This page is all about me
+title: About The Author
+subtitle: A gentleman and a scholar
+metaDescription: Author Bio
 date: 2017-01-01T00:00:00.000Z
 permalink: /about/index.html
 eleventyNavigation:
   key: About
-  order: 1
+  order: 4
 ---
+<!--StartFragment-->
 
-### What is Fernfolio?
-An [Eleventy](https://www.11ty.io/) theme designed to simplify the process of creating a beautiful portfolio and blog. Tightly integrated with [Netlify CMS](https://www.netlifycms.org/) for flexible, Git-powered content management.
+Mark Wukas has spent his life in Chicago working as professional asker of questions as both a teacher and writer–and sometimes both at the same time.
 
-### Why create this?
+A native South Sider and graduate of Quigley Preparatory Seminary South, Wukas credits his high school job–two years as an Andy Frain usher–with giving him a knowledge of the city and its neighborhoods that helped him on the streets as a young reporter.
 
-**Reason #1:** I wanted a portfolio that was simple, fast, accessible, and integrated with a git-powered cms. Existing templates didn't perfectly fit my needs, so I decided to build my own template.
+After receiving his B.A. and M.A. in English from the University of Illinois at Urbana-Champaign and spending two happy years at *The Daily Illini*, he returned to his high school alma mater to teach English before embarking on a 20-year career in journalism and professional writing. His stops included *The Palos Regional*, City News Bureau, United Press International, Radio Free Europe, and he spent several years being “Special to the Tribune.” To supplement his meager pay as a writer, Wukas returned to teaching literature and composition as an adjunct professor at the College of St. Francis in Joliet, Columbia College and Roosevelt University.
 
-**Reason #2:** I wanted to learn more about [Eleventy](https://www.11ty.dev/) and static site generators in general. Building Fernfolio was a good excuse to dive deeper on that topic.
+Wukas left public relations to return to the classroom, and after a year teaching world history and senior writing at Fasman Yeshiva in Skokie, Ill., he landed a job teaching English at New Trier Township High School in Winnetka, Ill., where he spent 19 years teaching English and coaching cross country and track and field before retiring in 2021.
 
-### How do I edit content?
-Once your site is deployed and configured, add `/admin` to the end of the url (not using localhost) and hit refresh. From there, you should be able to login and see see the content management dashboard. You should be able to change most content here (e.g. page text, images, logo, articles, projects, etc.).
+Wukas lives in either Uptown or Edgewater, depending upon where realtors draw the line, and spends his time writing the stories he never had time to tell while teaching and coaching.
 
-### Further customizations
-If you want to take your customizations further, you will need to modify the project source code. Some customizations, like changing theme colors and fonts, are straightforward (those can be modified in the `variables.scss` file). Other customizations will require more in-depth solutions.
-
-If you get stuck or just have a question, feel free to create a [Github issue](https://github.com/TylerMRoderick/fernfolio-11ty-template/issues) and I will try to point you in the right direction.
-
-Thanks for checking out Fernfolio 👋 - [Tyler M. Roderick](https://www.tylerroderick.com/)
+<!--EndFragment-->
 
 ![Fern in Hand](/src/assets/img/fern-forest.jpeg "Fern in Hand")
