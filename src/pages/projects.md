@@ -8,6 +8,6 @@ date: 2021-01-01
 permalink: /books/index.html
 eleventyNavigation:
   key: Books
-  order: 3
+  order: 1
 ---
 # Find out more:
