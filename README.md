@@ -1,31 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/5702ba89-7242-490e-b04d-e4a691faced5/deploy-status)](https://app.netlify.com/sites/fernfolio/deploys)
-
-# Fernfolio — An 11ty Portfolio Template
-Launch your personal portfolio in minutes and modify content without opening a code editor!
-
-<img width="1280" alt="fernfolio screenshot" src="https://raw.githubusercontent.com/TylerMRoderick/fernfolio-11ty-template/master/fernfolio-preview.jpeg">
-
-### <pre>🖥  [Demo](https://fernfolio.netlify.app/)</pre>
-
-## 🤔 What is this?
-An [Eleventy](https://www.11ty.io/) theme designed to simplify the process of creating a beautiful portfolio and blog. Tightly integrated with [Netlify CMS](https://www.netlifycms.org/) for flexible, Git-powered content management.
-
-## ✨ Features
-* Deep integration with [Netlify CMS](https://www.netlifycms.org/). Modify content without opening a code editor.
-* Customizable blog and project pages with tag support
-* Working contact form powered by [Netlify Forms](https://www.netlify.com/products/forms/)
-* Fast page speeds and high lighthouse scores
-* Uses Markdown for content files and Nunjucks for layouts
-* 100% Javascript framework free
-* SCSS support with sane base styles
-* Continuous Deployment workflow via [Netlify](https://www.netlify.com/)
-* Responsive images generated at build time
-* Minified HTML with [HTMLMinifier](https://github.com/kangax/html-minifier)
-* Minified CSS with [cssnano](https://github.com/cssnano/cssnano)
-* [Turbolinks](https://github.com/turbolinks/turbolinks) integration to enable instant navigation without page refresh
-* Useful Nunjuck filters built in
-
-
+# Author Personal Website Using 11ty
 ## 🚀 Quick Start
 ### 1. Click the "Deploy to Netlify" button below
 
@@ -66,14 +39,6 @@ If you want to test things locally before deploying, follow the steps below:
 
 Use this as the "Publish command" if needed by hosting such as Netlify.
 
-## 💡 Dark mode
-
-To enable switching from light to dark mode, `global.json` has some settings:
-
-- `enable_theme_switch`: set to `true` if you want your visitors to be able to switch theme
-- `default_theme`: set to `dark` or another value (which always means `light`)
-- `use_system_theme`: set to `true` if you want the system preference to be enforced
-
 ## 🎩 Common issues
 
 If you change the repo that was created at deploy time from public to private, you'll need to regenerate your token,
@@ -82,9 +47,5 @@ regenerate your token, head to "Settings" in your Netlify site dashboard, go to 
 section, then scroll to "Services" where you'll see an "Edit settings" button. Click that and you'll
 see a text link to "Generate access token in GitHub".
 
-## 🗣 Bug reports, feature requests, etc.
-
-This is a fun side project for me and I always welcome questions/comments. If you run into any problems or have a feature request, please open an issue. I try to read every one and will gladly assist you whenever possible.
-
 ## Credit
-*This project was originally forked from [eleventy-netlify-boilerplate](https://github.com/danurbanowicz/eleventy-netlify-boilerplate), but completely revamped to match the needs of a modern porfolio.*
+*This project was made from https://github.com/tylerMRoderick/fernfolio-11ty-template*

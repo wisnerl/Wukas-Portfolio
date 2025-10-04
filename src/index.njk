@@ -2,29 +2,17 @@
 layout: base.njk
 section: home
 ---
+<h1 class="title">MARK WUKAS</h1>
+
 <div class="custom-hero">
   <div class="custom-hero__bg"></div>
   <div class="custom-hero__content">
-    <div class="custom-hero__title-wrap">
-      <h1 class="custom-hero__title">MARK WUKAS</h1>
-    </div>
     <div class="custom-hero__columns">
       <div class="custom-hero__col custom-hero__col--left">
         <span class="custom-hero__span">PHYSICAL COPIES AVAILABLE NOW!</span>
         <p class="custom-hero__desc">
-          The death of a retired Chicago homicide detective forces Will Moore, an assistant city editor for the Chicago Tribune, to revisit life-and-death events from his first days as a police reporter for City News Bureau. <a href="https://eckhartzpress.com/shop/the-kiss-of-night/">Learn more</a>
+          The death of a retired Chicago homicide detective forces Will Moore, an assistant city editor for the Chicago Tribune, to revisit life-and-death events from his first days as a police reporter for City News Bureau.
         </p>
-        <div class="custom-hero__links">
-          <div>
-            <a href="#">Bookshop</a><br>
-            <a href="#">Apple Books</a><br>
-            <a href="#">UK/AUS/NZ</a>
-          </div>
-          <div>
-            <a href="#">Amazon</a><br>
-            <a href="#">Barnes & Noble</a>
-          </div>
-        </div>
       </div>
       <div class="custom-hero__col custom-hero__col--right">
         <img src="/assets/img/book-cover.jpg" alt="Carrie Soto Is Back Book Cover" class="custom-hero__book-img">
@@ -34,17 +22,9 @@ section: home
   <img src="/assets/img/skyline.png" alt="Skyline" class="custom-hero__skyline">
 </div>
 
-  {# Projects #}
+  {# Blog #}
   <div class="list-header">
-    <h2 class="list-header__title">Projects</h2>
-    <a class="btn btn--outline btn--sm" href="/projects">View All</a>
-  </div>
-  {% from "macros/projectlist.njk" import projectlist %}
-  {{ projectlist(projects = collections.project | reverse) }}
-
-  {# Articles #}
-  <div class="list-header">
-    <h2 class="list-header__title">Articles</h2>
+    <h2 class="list-header__title">Blog Posts</h2>
     <a class="btn btn--outline btn--sm" href="/blog">View All</a>
   </div>
   {% from "macros/articlelist.njk" import articlelist %}
@@ -54,3 +34,11 @@ section: home
     limit = 3
   ) }}
 </div>
+
+  {# Purchase A Copy #}
+  <div class="list-header">
+    <h2 class="list-header__title">Find out more</h2>
+  </div>
+  <a class="btn btn--outline btn--sm" href="/books">View All</a>
+  {% from "macros/projectlist.njk" import projectlist %}
+  {{ projectlist(projects = collections.project | reverse) }}

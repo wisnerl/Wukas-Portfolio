@@ -28,14 +28,6 @@
             </a>
           </li>
         {%- endfor %}
-
-        {% if global.enable_theme_switch %}
-          <li class="site-header__item">
-            <button class="site-header__link site-header__link--theme-switch" data-theme-switch>
-              {{ global.switch_theme_icon | svg | safe }}
-            </button>
-          </li>
-        {% endif %}
       </ul>
     </nav>
   </div>

@@ -20,6 +20,7 @@ body {
   line-height: 1.618;
   color: var(--color-text);
   background-color: var(--color-bg);
+  font-family: Georgia, serif;
 
   :root[data-theme="dark"] & {
     background-color: var(--color-bg-dark);
