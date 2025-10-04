@@ -1,5 +1,5 @@
 ---
-title: Here's a test post
+title: A test post
 date: 2025-10-04T14:45:55.912Z
 summary: post
 tags:
