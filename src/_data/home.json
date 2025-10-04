@@ -1,6 +1,6 @@
 {
-  "title": "Fernfolio",
-  "image": "/src/assets/img/fern-in-hand.jpeg",
-  "image_alt": "Fern in hand",
-  "body": "The super simple portfolio template built with [Eleventy](https://www.11ty.dev/) and [Netlify CMS](https://www.netlifycms.org/)."
+  "title": "Mark Wukas",
+  "image": "/src/assets/img/book-cover.jpg",
+  "image_alt": "The Kiss of Night Book Cover",
+  "body": "Author, coach, teacher"
 }
