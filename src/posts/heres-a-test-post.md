@@ -23,7 +23,7 @@ Test text of all **kinds to show** *how this looks*
 
 [google.com](google.com)
 
-> A quote section that I think looks very nice :)
+> A quote section that I think looks nice :)
 
 ## List Example
 
