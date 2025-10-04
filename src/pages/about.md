@@ -16,6 +16,6 @@ After receiving his B.A. and M.A. in English from the University of Illinois at 
 
 Wukas left public relations to return to the classroom, and after a year teaching world history and senior writing at Fasman Yeshiva in Skokie, Ill., he landed a job teaching English at New Trier Township High School in Winnetka, Ill., where he spent 19 years teaching English and coaching cross country and track and field before retiring in 2021.
 
-Wukas lives in either Uptown or Edgewater, depending upon where realtors draw the line, and spends his time writing the stories he never had time to tell while teaching and coaching.
+Wukas lives in either Uptown or Edgewater, depending upon where realtors draw the line, and spends his time writing the stories he never had time to tell while teaching and coaching. Add new text here.
 
 ![Mark Wukas in his office](/src/assets/img/ctc-l-ent-mark-wukas03.jpg "Mark Wukas in his office")
