@@ -146,12 +146,12 @@ a {
   }
 
   &:hover {
-    color: var(--color-secondary);
-    border-bottom: 2px solid var(--color-secondary);
+    // color: var(--color-secondary);
+    // border-bottom: 2px solid var(--color-secondary);
 
     :root[data-theme="dark"] & {
-      color: var(--color-link-dark);
-      border-color: var(--color-link-dark);
+      // color: var(--color-link-dark);
+      // border-color: var(--color-link-dark);
     }
   }
 }

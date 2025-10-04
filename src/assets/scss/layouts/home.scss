@@ -77,7 +77,8 @@
   font-size: 24px;
   margin-bottom: 32px;
   max-width: 720px;
-  color: #fffedd;
+  width: 70%;
+  color: #ffffff;
 
   a {
     color: #af2120 !important;
@@ -118,6 +119,12 @@
   right: -32px;
   z-index: 4;
   border-radius: 16px;
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1), box-shadow 0.3s;
+}
+
+.custom-hero__book-img:hover {
+  transform: scale(1.10);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.28);
 }
 .custom-hero__skyline {
   position: absolute;
