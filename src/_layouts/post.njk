@@ -4,14 +4,17 @@ section: post
 ---
 <div class="page-container">
   <article>
-    <h1>{{ title | safe }}</h1>
-    <p>
+    <h1 class="animate-on-scroll">{{ title | safe }}</h1>
+    <p class="post-meta animate-on-scroll">
       <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time>
     </p>
     <hr/>
-
+    <div class="animate-on-scroll">
     {{ layoutContent | safe }}
+    </div>
 
+    {# Tags #}
+    {% set tags = page.data.tags %}
     {% if tags %}
       <p class="tag-list">
       {% for tag in tags %}
@@ -25,7 +28,23 @@ section: post
 
   </article>
 
-  <nav>
+  <nav class="animate-on-scroll">
     <a href="{{ '/blog/' | url }}">← View All Articles</a>
   </nav>
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const animatedSections = document.querySelectorAll('.animate-on-scroll');
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  animatedSections.forEach(section => observer.observe(section));
+});
+</script>

@@ -21,3 +21,22 @@
 	</body>
 
 </html>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('a[href]').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      // Only force reload for left-click, no modifier keys, and not anchor/hash links
+      if (
+        e.button === 0 &&
+        !e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey &&
+        link.getAttribute('href').indexOf('#') !== 0 &&
+        link.getAttribute('target') !== '_blank'
+      ) {
+        window.location.href = link.href;
+        e.preventDefault();
+      }
+    });
+  });
+});
+</script>
