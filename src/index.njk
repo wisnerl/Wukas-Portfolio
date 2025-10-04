@@ -5,17 +5,19 @@ section: home
 <h1 class="title">MARK WUKAS</h1>
 
 <div class="custom-hero">
-  <div class="custom-hero__bg"></div>
+  <div class="custom-hero__bg animate-on-scroll" data-animate-order="1"></div>
   <div class="custom-hero__content">
     <div class="custom-hero__columns">
       <div class="custom-hero__col custom-hero__col--left">
-        <h2 class="custom-hero__span">THE KISS OF NIGHT</h2>
-        <p class="custom-hero__desc">
+        <h2 class="custom-hero__span animate-on-scroll" data-animate-order="2">THE KISS OF NIGHT</h2>
+        <p class="custom-hero__desc animate-on-scroll" data-animate-order="3">
           The death of a retired Chicago homicide detective forces Will Moore, an assistant city editor for the Chicago Tribune, to revisit life-and-death events from his first days as a police reporter for City News Bureau. As he becomes immersed in the dark river of despair coursing through the streets at night, Will comes to understand the humanity lying beneath Chicago crime statistics. Will himself becomes part of the story when his next-door neighbor, a young Latino gang member is murdered, and Will is asked to help take revenge.  The Kiss of Night will keep you turning page after page before reaching its affecting conclusion.
         </p>
-        <h5 style="margin-top: 0px;"><a href="https://eckhartzpress.com/shop/the-kiss-of-night/" target="_blank" rel="noopener">Physical Copies Available Now!</a></h5>
+        <h5 class="animate-on-scroll" data-animate-order="4" style="margin-top: 0px;">
+          <a href="https://eckhartzpress.com/shop/the-kiss-of-night/" target="_blank" rel="noopener">Physical Copies Available Now!</a>
+        </h5>
       </div>
-      <div class="custom-hero__col custom-hero__col--right">
+      <div class="custom-hero__col custom-hero__col--right animate-on-scroll" data-animate-order="5">
         <a href="https://eckhartzpress.com/shop/the-kiss-of-night/" target="_blank" rel="noopener">
           <img src="/assets/img/book-cover.jpg" alt="Carrie Soto Is Back Book Cover" class="custom-hero__book-img">
         </a>
@@ -25,7 +27,7 @@ section: home
   <img src="/assets/img/skyline.png" alt="Skyline" class="custom-hero__skyline">
 </div>
 
-<div class="quote-section">
+<div class="quote-section animate-on-scroll">
   <div class="quote-section__bar"></div>
   <div class="quote-section__content">
     <p class="quote-section__quote">
@@ -39,7 +41,7 @@ section: home
   </div>
 </div>
 
-<div class="about-author">
+<div class="about-author animate-on-scroll">
   <div class="about-author__text">
     <h3>About the Author</h3>
     <p>
@@ -52,7 +54,7 @@ section: home
   </div>
 </div>
 
-<div class="quote-section">
+<div class="quote-section animate-on-scroll">
   <div class="quote-section__bar"></div>
   <div class="quote-section__content">
     <p class="quote-section__quote">
@@ -67,20 +69,21 @@ section: home
 </div>
 
   {# Blog #}
-  <div class="list-header">
+  <div class="list-header animate-on-scroll">
     <h2 class="list-header__title">Blog Posts</h2>
     <a class="btn btn--outline btn--sm" href="/blog">View All</a>
   </div>
+  <div class = "animate-on-scroll" style="padding-left: 32px;">
   {% from "macros/articlelist.njk" import articlelist %}
   {{ articlelist(
     articles = collections.post | reverse,
     show_tags = false,
     limit = 3
   ) }}
-</div>
+  </div>
 
   {# Purchase A Copy #}
-  <div class="list-header">
+  <div class="list-header animate-on-scroll">
     <h2 class="list-header__title">Explore more</h2>
     <div class="social-links">
       <a href="https://eckhartzpress.com/shop/the-kiss-of-night/" target="_blank" rel="noopener">
@@ -97,3 +100,37 @@ section: home
       </a>
     </div>
   </div>
+<script>
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Animate all sections except custom-hero children
+  const animatedSections = document.querySelectorAll('.animate-on-scroll:not([data-animate-order])');
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  animatedSections.forEach(section => observer.observe(section));
+
+  // Animate custom-hero children with stagger
+  const heroElements = Array.from(document.querySelectorAll('.custom-hero .animate-on-scroll[data-animate-order]'))
+    .sort((a, b) => +a.dataset.animateOrder - +b.dataset.animateOrder);
+
+  const heroObserver = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        heroElements.forEach((el, i) => {
+          setTimeout(() => el.classList.add('visible'), i * 400);
+        });
+        obs.disconnect();
+      }
+    });
+  }, { threshold: 0.2 });
+
+  if (heroElements.length) heroObserver.observe(heroElements[0]);
+});
+</script>
