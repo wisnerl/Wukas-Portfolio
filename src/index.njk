@@ -9,10 +9,11 @@ section: home
   <div class="custom-hero__content">
     <div class="custom-hero__columns">
       <div class="custom-hero__col custom-hero__col--left">
-        <span class="custom-hero__span">PHYSICAL COPIES AVAILABLE NOW!</span>
+        <h2 class="custom-hero__span">THE KISS OF NIGHT</h2>
         <p class="custom-hero__desc">
-          The death of a retired Chicago homicide detective forces Will Moore, an assistant city editor for the Chicago Tribune, to revisit life-and-death events from his first days as a police reporter for City News Bureau.
+          The death of a retired Chicago homicide detective forces Will Moore, an assistant city editor for the Chicago Tribune, to revisit life-and-death events from his first days as a police reporter for City News Bureau. As he becomes immersed in the dark river of despair coursing through the streets at night, Will comes to understand the humanity lying beneath Chicago crime statistics. Will himself becomes part of the story when his next-door neighbor, a young Latino gang member is murdered, and Will is asked to help take revenge.  The Kiss of Night will keep you turning page after page before reaching its affecting conclusion.
         </p>
+        <h5 style="margin-top: 0px;"><a href="https://eckhartzpress.com/shop/the-kiss-of-night/" target="_blank" rel="noopener">Physical Copies Available Now!</a></h5>
       </div>
       <div class="custom-hero__col custom-hero__col--right">
         <a href="https://eckhartzpress.com/shop/the-kiss-of-night/" target="_blank" rel="noopener">
@@ -22,6 +23,47 @@ section: home
     </div>
   </div>
   <img src="/assets/img/skyline.png" alt="Skyline" class="custom-hero__skyline">
+</div>
+
+<div class="quote-section">
+  <div class="quote-section__bar"></div>
+  <div class="quote-section__content">
+    <p class="quote-section__quote">
+      <em>
+        “Here is a book that deserves a place among your favorite Chicago novels. Written with a reporter’s sharp eye and attention to detail and colorful characters, The Kiss of Night brings the city alive in all its good/evil struggles, giving you a story that is vivid and unforgettable.”
+      </em>
+    </p>
+    <span class="quote-section__attribution">
+      — Rick Kogan, Chicago Tribune
+    </span>
+  </div>
+</div>
+
+<div class="about-author">
+  <div class="about-author__text">
+    <h3>About the Author</h3>
+    <p>
+      Mark Wukas has spent his life in Chicago working as professional asker of questions as both a teacher and writer–and sometimes both at the same time. A native South Sider and graduate of Quigley Preparatory Seminary South, Wukas credits his high school job–two years as an Andy Frain usher–with giving him a knowledge of the city and its neighborhoods that helped him on the streets as a young reporter.
+    </p>
+    <p><a href="/about/" target="_blank" rel="noopener">Learn more</a></p>
+  </div>
+  <div class="about-author__img-wrap">
+    <img src="/assets/img/wukas.jpeg" alt="Mark Wukas" class="about-author__img">
+  </div>
+</div>
+
+<div class="quote-section">
+  <div class="quote-section__bar"></div>
+  <div class="quote-section__content">
+    <p class="quote-section__quote">
+      <em>
+        “Mark Wukas has captured the essence of young reporters fueled by adrenaline and idealism. Their reporting is as unglamorous as it is thankless. Yet while reading The Kiss of Night I found myself yearning for those days when chasing a story was unvarnished and pure. The Kiss of Night is the real thing and makes for a compelling read from start to finish.”
+      </em>
+    </p>
+    <span class="quote-section__attribution">
+      — Ken Paulson, Editor-in-Chief (emeritus), USA Today
+    </span>
+  </div>
 </div>
 
   {# Blog #}
@@ -39,8 +81,19 @@ section: home
 
   {# Purchase A Copy #}
   <div class="list-header">
-    <h2 class="list-header__title">Find out more</h2>
+    <h2 class="list-header__title">Explore more</h2>
+    <div class="social-links">
+      <a href="https://eckhartzpress.com/shop/the-kiss-of-night/" target="_blank" rel="noopener">
+        <img src="/assets/img/eckhartz-logo.jpg" alt="Eckhartz Press" class="social-links__img">
+      </a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Feckhartzpress.com%2Fshop%2Fthe-kiss-of-night%2F&t=The%20Kiss%20of%20Night" target="_blank" rel="noopener">
+        <img src="/assets/img/facebookLogo.png" alt="Facebook" class="social-links__img">
+      </a>
+      <a href="https://x.com/intent/tweet?text=The%20Kiss%20of%20Night&url=https%3A%2F%2Feckhartzpress.com%2Fshop%2Fthe-kiss-of-night%2F" target="_blank" rel="noopener">
+        <img src="/assets/img/twitterLogo.png" alt="Twitter" class="social-links__img">
+      </a>
+      <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Feckhartzpress.com%2Fshop%2Fthe-kiss-of-night%2F&title=The%20Kiss%20of%20Night&summary=The%20death%20of%20a%20retired%20Chicago%20homicide%20detective%20forces%20Will%20Moore%2C%20an%20assistant%20city%20editor%20for%20the%20Chicago%20Tribune%2C%20to%20revisit%20life-and-death%20events%20from%20his%20first%20days%20as%20a%20police%20reporter%20for%20City%20News%20Bureau.&mini=true" target="_blank" rel="noopener">
+        <img src="/assets/img/linkedInLogo.png" alt="LinkedIn" class="social-links__img">
+      </a>
+    </div>
   </div>
-  <a class="btn btn--outline btn--sm" href="/books">View All</a>
-  {% from "macros/projectlist.njk" import projectlist %}
-  {{ projectlist(projects = collections.project | reverse) }}

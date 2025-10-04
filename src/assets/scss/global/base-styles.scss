@@ -156,6 +156,18 @@ a {
   }
 }
 
+p {
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+h2, h5 {
+  a:hover {
+    color: white !important;
+  }
+}
+
 ul {
   padding-left: 1.4em;
   margin-top: 0;

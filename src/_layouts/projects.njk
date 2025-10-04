@@ -10,10 +10,10 @@ section: projects
   {% endif %}
 
   <hr/>
+  <br />
+  <br />
 
-  {{ layoutContent | safe }}
-
-  {# Projects #}
-  {% from "macros/projectlist.njk" import projectlist %}
-  {{ projectlist(projects = collections.project | reverse) }}
+  <a href="https://eckhartzpress.com/shop/the-kiss-of-night/" target="_blank" rel="noopener">
+    <img src="/assets/img/book-cover.jpg" alt="Carrie Soto Is Back Book Cover" class="custom-hero__book-img">
+  </a>
 </div>
