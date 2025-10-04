@@ -4,7 +4,7 @@ section: post
 ---
 <div class="page-container">
   <article>
-    <h1>{{ title }}</h1>
+    <h1>{{ title | safe }}</h1>
     <p>
       <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time>
     </p>
