@@ -1,5 +1,5 @@
 ---
-title: A test post
+title: An example post
 date: 2025-10-04T14:45:55.912Z
 summary: post
 tags:
@@ -23,7 +23,7 @@ Test text of all **kinds to show** *how this looks*
 
 [google.com](google.com)
 
-> A quote section that I think looks very nice :)
+> A quote section that I think looks nice :)
 
 ## List Example
 
